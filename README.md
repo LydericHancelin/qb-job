@@ -4,7 +4,7 @@ Job for QB-Core Framework
 ## Dependencies
 - [qb-core](https://github.com/qbcore-framework/qb-core)
 - [qb-inventory](https://github.com/qbcore-framework/qb-inventory)
-- [qb-bossmenu](https://github.com/qbcore-framework/qb-bossmenu)
+- [qb-bossmenu] (https://github.com/qbcore-framework/qb-bossmenu)
 
 ## Screenshots
 ![Vehicle Spawner](https://imgur.com/bDYiFoG.png)
@@ -13,8 +13,8 @@ Job for QB-Core Framework
 
 ## Features
 - To create a new job (ex : baker, gardener...) you just have to create a copy of qb-job and rename it with your job name (ex : qb-baker). Now you have to change config.lua datas. 
-- /setnewjob - Sets someone yourjob
-- /firejob - Fires a yourjob worker
+- /setnewjob_"yourjob" - Sets someone yourjob -- Replace "yourjob" by your job name
+- /firejob_"yourjob" - Fires a yourjob worker -- Replace "yourjob" by your job name
 - On Duty/Off Duty
 - Choose vehicules in shared.lua and add them on config.lua.
 
