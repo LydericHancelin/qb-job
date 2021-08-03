@@ -1,5 +1,5 @@
 # qb-job
-Job for QB-Core Framework
+Generic job for QB-Core Framework
 
 ## Dependencies
 - [qb-core](https://github.com/qbcore-framework/qb-core)
