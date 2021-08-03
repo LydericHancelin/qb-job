@@ -12,7 +12,7 @@ end
 
 
 --Set / Unset job commands--
-QBCore.Commands.Add("setnewjob", "Give Someone The "..Config.jobname.."job", {{name="id", help="ID Of The Player"}}, false, function(source, args)
+QBCore.Commands.Add("setnewjob_"..Config.jobname, "Give Someone The "..Config.jobname.."job", {{name="id", help="ID Of The Player"}}, false, function(source, args)
     local Player = QBCore.Functions.GetPlayer(source)
     if IsAuthorized(Player.PlayerData.citizenid) then
         local TargetId = tonumber(args[1])
@@ -31,7 +31,7 @@ QBCore.Commands.Add("setnewjob", "Give Someone The "..Config.jobname.."job", {{n
     end
 end)
 
-QBCore.Commands.Add("firejob", "Fire a "..Config.jobname.."", {{name="id", help="ID Of The Player"}}, false, function(source, args)
+QBCore.Commands.Add("firejob_"..Config.jobname, "Fire a "..Config.jobname.."", {{name="id", help="ID Of The Player"}}, false, function(source, args)
     local Player = QBCore.Functions.GetPlayer(source)
     if IsAuthorized(Player.PlayerData.citizenid) then
         local TargetId = tonumber(args[1])
