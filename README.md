@@ -4,7 +4,7 @@ Job for QB-Core Framework
 ## Dependencies
 - [qb-core](https://github.com/qbcore-framework/qb-core)
 - [qb-inventory](https://github.com/qbcore-framework/qb-inventory)
-- [qb-bossmenu] (https://github.com/qbcore-framework/qb-bossmenu)
+- [qb-bossmenu](https://github.com/qbcore-framework/qb-bossmenu)
 
 ## Screenshots
 ![Vehicle Spawner](https://imgur.com/bDYiFoG.png)
@@ -30,7 +30,7 @@ ensure qb-bossmenu
 ensure qb-job
 ```
 
-/!\ Be sure to add your nex job on shared.lua like : 
+/!\ Be sure to add your new job on shared.lua like : 
 ```
 	["jobname"] = {
 		label = "jobname",
