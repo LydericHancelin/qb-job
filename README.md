@@ -30,7 +30,7 @@ ensure qb-bossmenu
 ensure qb-job
 ```
 
-/!\ Be sure to add your nex job on shared.lua like : 
+/!\ Be sure to add your new job on shared.lua like : 
 ```
 	["jobname"] = {
 		label = "jobname",
