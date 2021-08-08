@@ -33,7 +33,7 @@ AddEventHandler('QBCore:Client:OnPlayerLoaded', function()
     QBCore.Functions.GetPlayerData(function(PlayerData)
         PlayerJob = PlayerData.job
         if PlayerJob.onduty then
-            if PlayerJob.name == 'metier' then
+            if PlayerJob.name == Config.jobname then
                 TriggerServerEvent('QBCore:ToggleDuty')
             end
         end
@@ -200,7 +200,7 @@ function SpawnListVehicle(model)
     QBCore.Functions.SpawnVehicle(model, function(veh)
         SetVehicleNumberPlateText(veh,
                                   'ACBV' .. tostring(math.random(1000, 9999)))
-        SetEntityHeading(veh, coords.w)
+        SetEntityHeading(veh, Config.Locations["vehicle"].w)
         exports['LegacyFuel']:SetFuel(veh, 100.0)
         Menu.hidden = true
         TaskWarpPedIntoVehicle(PlayerPedId(), veh, -1)
