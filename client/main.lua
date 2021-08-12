@@ -175,11 +175,19 @@ Citizen.CreateThread(function()
                         end
                     end
                 end
+                if not inRange then
+                    Citizen.Wait(1500)
+                end
+            else
+                Citizen.Wait(1500)
             end
+        else
+            Citizen.Wait(1500)
         end
         Citizen.Wait(3)
     end
-end)
+end
+)
 
 function VehicleList()
     ClearMenu()
