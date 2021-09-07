@@ -1,6 +1,3 @@
-ModdedVehicles = {}
-VehicleStatus = {}
-ClosestPlate = nil
 isLoggedIn = false
 PlayerJob = {}
 
